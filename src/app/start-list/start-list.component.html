@@ -1,0 +1,17 @@
+<p-tabMenu [model]="tabMenuItems" [activeItem]="tabMenuItems[1]"></p-tabMenu>
+<br><br>
+<p-table [value]="runners">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Bib Number</th>
+            <th>Create Timestamp</th>
+        
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-runner>
+        <tr>
+            <td>{{runner.bibNumber}}</td>
+            <td>{{runner.createTimestamp}}</td>
+        </tr>
+    </ng-template>
+</p-table>

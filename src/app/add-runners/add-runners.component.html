@@ -1,0 +1,8 @@
+<p-tabMenu [model]="tabMenuItems" [activeItem]="tabMenuItems[2]"></p-tabMenu>
+<br><br>
+<div style="font-family: Arial, Helvetica, sans-serif;">
+    <label>Add new expected runner's bib number:</label><br><br>
+    <p-inputNumber [(ngModel)]="val" maxlength=3 [showButtons]="true" buttonLayout="horizontal" inputId="horizontal" spinnerMode="horizontal"
+    decrementButtonClass="p-button-danger" incrementButtonClass="p-button-success" incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus">
+    </p-inputNumber>
+</div>
